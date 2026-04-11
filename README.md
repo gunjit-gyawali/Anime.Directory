@@ -30,6 +30,6 @@ Search by title
 Show details
 
 ## Known Issues (Will fix)
-Trailer embed URL bug
-Max 24 results, no pagination
+Trailer embed URL bug,
+Max 24 results, no pagination,
 Search by title only
