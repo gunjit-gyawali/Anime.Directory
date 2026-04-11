@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime.Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+        <div class="logo-block">
+            <h1 class="logo">Anime<span class="dot">.</span>Directory</h1>
+            <h3>A quick reference guide before starting any anime.</h3>
+        </div>
+
+    <div class="search-wrap">
+        <div class="search-bar">
+            <span class="search-icon"></span>
+            <input type="text" id="searchInput" placeholder="Search anime titles..." autocomplete="off">
+            <button id="searchBtn" class="search-btn">GO</button>
+        </div>
+
+        <div class="search-tags">
+            <span class="tag-label">TRENDING:</span>
+            <button class="quick-tag" data-q="Attack on Titan">Attack on Titan</button>
+            <button class="quick-tag" data-q="Demon Slayer">Demon Slayer</button>
+            <button class="quick-tag" data-q="Jujutsu Kaisen">Jujutsu Kaisen</button>
+            <button class="quick-tag" data-q="Naruto">Naruto</button>
+        </div>
+    </div>
+</header>
+
+<section class="season-strip">
+    <div class="strip-inner">
+        <button class="strip-btn active" data-action="top">Top Anime</button>
+        <button class="strip-btn" data-action="season">This Season</button>
+        <button class="strip-btn" data-action="upcoming">Upcoming</button>
+        <button class="strip-btn" data-action="movie">Movies</button>
+    </div>
+</section>
+
+<main class="main">
+    <div class="results-header">
+        <span class="results-label" id="resultsLabel">TOP ANIME</span>
+        <span class="results-count" id="resultsCount"></span>
+    </div>
+
+    <div class="anime-grid" id="animeGrid"></div>
+
+    <div class="loader" id="loader">
+        <div class="loader-ring"></div>
+        <span>Fetching data</span>
+    </div>
+
+    <div class="error-box" id="errorBox" style="display:none;">
+        <span class="error-icon">&#9888;</span>
+        <p id="errorMsg">Something went wrong.</p>
+        <button onclick="retryLast()">Retry</button>
+    </div>
+</main>
+
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="modal-close" id="modalClose">&#x2715;</button>
+        <div class="modal-inner" id="modalInner"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
