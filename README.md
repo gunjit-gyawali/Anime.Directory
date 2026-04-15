@@ -11,7 +11,7 @@ Handles API limits automatically
 Retry button if something fails
 
 ## How to Use
-Click- ....
+Click-[ ....](https://gunjit-anime-directory.netlify.app/)
 
 ## Files
 index.html – page layout
@@ -19,8 +19,8 @@ style.css – styles
 script.js – fetch API and show data
 
 ## API
-Uses Jikan API
- (free MyAnimeList API). No key needed.
+Uses anilist api
+
 
 ## Endpoints used:
 Top Anime & Movies
