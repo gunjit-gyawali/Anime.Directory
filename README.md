@@ -8,7 +8,7 @@ Browse Top Anime, This Season, Upcoming, and Movies
 Live search with trending shortcuts
 Click a show for details and trailer
 Handles API limits automatically
-Retry button if something fails
+Retry button if something fails 
 
 ## How to Use
 Click-[ ....](https://gunjit-anime-directory.netlify.app/)

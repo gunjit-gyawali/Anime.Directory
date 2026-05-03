@@ -412,7 +412,7 @@ async function openModal(id) {
         '<div style="padding:4rem;text-align:center;color:#7a7370;">' +
         '<div class="loader-ring" style="margin:0 auto 1rem;"></div>' +
         '<span style="font-family:JetBrains Mono,monospace;font-size:.75rem;">Loading...</span>' +
-        '</div>';
+        '</div>'; 
 
     try {
         var anime = await fetchAnimeDetail(id);
